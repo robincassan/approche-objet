@@ -12,5 +12,21 @@ public class TestPersonne {
         //Pour afficher
         System.out.println(personne1.prenom + " " + personne1.nom + " habite à " + personne1.adresse.ville);
         System.out.println(personne2.prenom + " " + personne2.nom + " habite à " + personne2.adresse.ville);
+
+        Personne personne3 = new Personne("John", "Ardisson");
+        //ajout de l'adresse après création
+        personne3.modifierAdresse(adresse1);
+        //affichage
+        personne3.afficherNomPrenom();
+        System.out.println("adresse : "+ personne3.getAdresse().numeroRue +" "+
+                personne3.getAdresse().libelleRue + " " +personne3.getAdresse().codePostal + " "+
+                personne3.getAdresse().ville);
+        personne3.modiferPrenom("Laurent");
+        personne3.modifierNom("Baffie");
+        personne3.afficherNomPrenom();
+        personne3.modifierAdresse(adresse2);
+        System.out.println("adresse : "+ personne3.getAdresse().numeroRue +" "+
+                personne3.getAdresse().libelleRue + " " +personne3.getAdresse().codePostal + " "+
+                personne3.getAdresse().ville);
     }
 }
