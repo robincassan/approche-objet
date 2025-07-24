@@ -9,5 +9,8 @@ public class TestPoint {
         System.out.println("Point 2 : " + p2); // Affiche [-2;0]
 
         System.out.println("Coordonnées de p1 : x=" + p1.getX() + ", y=" + p1.getY());
+
+        Point p = new Point();
+        System.out.println("Point par défaut : " + p); // [25;25]
     }
 }
